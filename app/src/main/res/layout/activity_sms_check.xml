@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.uns.baseapp.ui.SmsCheckActivity">
+
+    <TextView
+        android:id="@+id/tv_sms_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/bind_bank_sms"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_x2s"/>
+
+    <LinearLayout
+        style="@style/BoxPadding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_sms"
+            style="@style/MyEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:hint="请输入短信校验码"
+            android:inputType="number"
+            />
+
+        <Button
+            android:id="@+id/btn_send_sms"
+            android:layout_width="66dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_button_short_blue"
+            android:text="@string/send_sms"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xs"/>
+    </LinearLayout>
+
+    <com.uns.baseapp.view.LoadingButton
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_button_gray"
+        android:clickable="false"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xs"/>
+</LinearLayout>

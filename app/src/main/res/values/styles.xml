@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="activityAnim">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_enter</item>
+    </style>
+
+    <style name="MyTextView">
+        <item name="android:lines">1</item>
+        <item name="android:textSize">@dimen/text_size_xs</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <style name="MyEditText" parent="MyTextView">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColorHint">@color/lightgray</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="BoxPadding">
+        <item name="android:paddingLeft">@dimen/box_padding_left</item>
+        <item name="android:paddingTop">@dimen/box_padding_top</item>
+        <item name="android:paddingBottom">@dimen/box_padding_bottom</item>
+        <item name="android:background">@drawable/top_bottom_divider</item>
+    </style>
+
+    <style name="MyDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!--分割线的格式-->
+    <style name="dividing_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.7dp</item>
+        <item name="android:background">#FFD9D9D9</item>
+    </style>
+</resources>

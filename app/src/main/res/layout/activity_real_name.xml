@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.uns.baseapp.ui.realname.RealNameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        style="@style/BoxPadding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="3dp"
+                android:text="商户名称："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_xs"/>
+
+            <TextView
+                android:id="@+id/tv_merchantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="商户名称"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_xs"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/real_name_hint"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_xs"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/BoxPadding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/MyTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="真实姓名"/>
+
+            <EditText
+                android:id="@+id/et_name"
+                style="@style/MyEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:hint="请填写真实姓名"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/lightgray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="身份证号码"
+                style="@style/MyTextView"
+                />
+
+            <EditText
+                android:id="@+id/et_id"
+                style="@style/MyEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:hint="请填写真实身份证号"
+                android:inputType="number"
+                android:maxLength="18"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/selector_checkbox_sign"
+            android:button="@null"
+            android:checked="true"/>
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已同意《银生宝登录服务协议》 和 《银生宝服务协议》。"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_x2s"/>
+    </LinearLayout>
+
+
+    <com.uns.baseapp.view.LoadingButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_button_gray"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xs"/>
+
+
+
+</LinearLayout>
