@@ -1,14 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--基准：1080px sw-360 480dpi-->
+    <dimen name="title_height">50dp</dimen>
+    <dimen name="title_bar_height">65dp</dimen>
+    <dimen name="title_bar_padding_top">8dp</dimen>
+    <dimen name="title_bar_padding_bottom">8dp</dimen>
+    <dimen name="c_z_t_padding_top">13dp</dimen>
+    <dimen name="c_z_t_padding_bottom">10dp</dimen>
+    <dimen name="home_header_height">320dp</dimen>
+    <dimen name="password_board_height">200dp</dimen>
 
-    <dimen name="text_size_xxs">10sp</dimen>
-    <dimen name="text_size_x2s">12sp</dimen>
+    <dimen name="dp180">180dp</dimen>
+    <dimen name="dp160">160dp</dimen>
+    <dimen name="dp120">120dp</dimen>
+    <dimen name="dp100">100dp</dimen>
+    <dimen name="dp90">90dp</dimen>
+    <dimen name="dp85">85dp</dimen>
+    <dimen name="dp80">80dp</dimen>
+    <dimen name="dp75">75dp</dimen>
+    <dimen name="dp70">70dp</dimen>
+    <dimen name="dp50">50dp</dimen>
+    <dimen name="dp55">55dp</dimen>
+    <dimen name="dp60">60dp</dimen>
+    <dimen name="dp65">65dp</dimen>
+    <dimen name="dp45">45dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+    <dimen name="dp35">35dp</dimen>
+    <dimen name="dp30">30dp</dimen>
+    <dimen name="dp25">25dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp15">15dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp3">5dp</dimen>
+    <dimen name="line_width">0.8dp</dimen>
+
+    <dimen name="margin_xxxs">5dp</dimen>
+    <dimen name="margin_xxs">10dp</dimen>
+    <dimen name="margin_xs">15dp</dimen>
+    <dimen name="margin_s">20dp</dimen>
+    <dimen name="margin_m">25dp</dimen>
+    <dimen name="margin_l">30dp</dimen>
+    <dimen name="margin_xl">35dp</dimen>
+    <dimen name="margin_xxl">40dp</dimen>
+
+    <dimen name="text_size_s">14sp</dimen>
     <dimen name="text_size_xs">13sp</dimen>
-    <dimen name="text_size_x4s">14sp</dimen>
-    <dimen name="text_size_s">15sp</dimen>
-    <dimen name="text_size_m">18sp</dimen>
-    <dimen name="text_size_l">20sp</dimen>
-    <dimen name="box_padding_left">15dp</dimen>
-    <dimen name="box_padding_right">15dp</dimen>
-    <dimen name="box_padding_top">6dp</dimen>
-    <dimen name="box_padding_bottom">6dp</dimen>
+    <dimen name="text_size_xxs">11sp</dimen>
+    <dimen name="text_size_m">15sp</dimen>
+    <dimen name="text_size_l">17sp</dimen>
+    <dimen name="text_size_xl">20sp</dimen>
+    <dimen name="text_size_big">30sp</dimen>
 </resources>
