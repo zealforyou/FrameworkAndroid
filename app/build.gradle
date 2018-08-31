@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-//apply plugin: 'com.android.library'
 android {
     compileSdkVersion 25
     buildToolsVersion rootProject.toolVersion
@@ -13,32 +12,21 @@ android {
     }
     signingConfigs {
         uns_keystore {
-            storePassword 'w12346789'
-            keyAlias 'ysbpay'
-            keyPassword 'ysb20130708'
+            storePassword ''
+            keyAlias ''
+            keyPassword ''
             storeFile file('E:/ysb')
         }
     }
     buildTypes {
         release {
             buildConfigField('String', 'ENVIROMENT', "\"release\"")
-//            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.uns_keystore
         }
         merchant {
             buildConfigField('String', 'ENVIROMENT', "\"merchant\"")
             debuggable false
-            signingConfig signingConfigs.uns_keystore
-        }
-        ft {
-            buildConfigField('String', 'ENVIROMENT', "\"ft\"")
-            debuggable true
-            signingConfig signingConfigs.uns_keystore
-        }
-        sit {
-            buildConfigField('String', 'ENVIROMENT', "\"sit\"")
-            debuggable true
             signingConfig signingConfigs.uns_keystore
         }
         debug {
@@ -68,4 +56,5 @@ dependencies {
     compile 'com.android.support:design:25.4.0'
     compile 'com.jaeger.statusbarutil:library:1.4.0'
     compile 'com.jzxiang.pickerview:TimePickerDialog:1.0.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
 }
